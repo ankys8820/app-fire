@@ -13,14 +13,20 @@ form{
         width: 200px;
         height: 30px;
         margin: 10px;
+        border: none;
     }
     button{
         width: 200px;
         height: 30px;
         border: none;
+        cursor: pointer;
         background-color: rgb(119, 47, 119);
         color: aliceblue;
         font-weight: bold;
+    }
+    button:hover{
+        background-color: rgb(87, 47, 87);
+        color: aliceblue;
     }
     span{
         font-size: 12px;

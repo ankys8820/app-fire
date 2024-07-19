@@ -13,6 +13,7 @@ form{
         width: 200px;
         height: 30px;
         margin: 10px;
+        border: none;
     }
     button{
         width: 200px;
@@ -20,7 +21,13 @@ form{
         border: none;
         background-color: rgb(61, 199, 233);
         color: aliceblue;
+        cursor: pointer;
         font-weight: bold;
+        
+    }
+    button:hover{
+        background-color: rgb(33, 110, 129);
+        color: aliceblue;
     }
 }
 }
