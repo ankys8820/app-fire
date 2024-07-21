@@ -5,7 +5,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase.js";
 import "./login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [error, setError] = useState(false);
@@ -14,6 +14,8 @@ const Login = () => {
     email: "",
     password: "",
   });
+
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -24,6 +26,7 @@ const Login = () => {
 
         console.log(user);
         alert("Logged in successfully!");
+        navigate("/dashboard");
       })
       .catch((error) => {
         setError(true);
